@@ -287,6 +287,7 @@ uint32_t MoveBackRecovery::publishStop() const
   zero_vel.linear.x = zero_vel.linear.y = zero_vel.linear.z = 0;
   zero_vel.angular.x = zero_vel.angular.y = zero_vel.angular.z = 0;
   cmd_vel_pub_.publish(zero_vel);
+  return 0;
 }
 
 bool MoveBackRecovery::cancel() {
